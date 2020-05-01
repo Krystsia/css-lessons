@@ -7,65 +7,19 @@
 
 /**============ main menu =================**/
 
-.main-menu {
-    display: flex;
-    justify-content: space-between;
+nav {
+    background: none;
 }
 
-.main-menu__item  {
-    color: black;
-}
-
-.menu-list__item {
-    display: inline-block;
-    padding: 20px 30px;
-    margin: 10px 20px;
-    position: relative;
-    color: white;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.menu-list__item:before,
-.menu-list__item:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    box-sizing: border-box;
-}
-
-.menu-list__item:before {
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid #e2c327;
-    border-top: 1px solid #e2c327;
-    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-}
-.menu-list__item:after {
-    top: 0;
-    right: 0;
-    border-right: 1px solid #e2c327;
-    border-bottom: 1px solid #e2c327;
-    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
-}
-
-.menu-list__item:hover {
-    cursor: pointer;
-}
-
-
-.menu-list__item:hover:before,
-.menu-list__item:hover:after{
+.nav-wrapper .right {
     height: 100%;
-    width: 100%;
-    opacity: 1;
+    display: flex;
 }
-.menu-list__item:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
-.menu-list__item:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
 
+.menu-list__item a {
+    font-size: 26px;
+    line-height: 64px;
+}
 
 
 /** ======================== main header title ============================== **/

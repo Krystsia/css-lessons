@@ -1,5 +1,6 @@
 body {
     font-family: Helvetica;
+    font-family: MyFont;
 }
 
 
@@ -57,9 +58,8 @@ s
     background: none;
     padding: 10px 30px;
     border: 2px solid #f1443f;
-    /*border-radius: 10px/30px 40px/20px 20px/40px 10px/20px;*/
+    border-radius: 10px/30px 40px/20px 20px/40px 10px/20px;
     color: #f14642;
-    font-family: 'Montserrat', sans-serif;
     transition: .4s;
 }
 
