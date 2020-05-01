@@ -25,7 +25,7 @@ nav {
 /** ======================== main header title ============================== **/
 
 .main-title {
-    font-family:"café & brewery";
+    font-family: MyFont;
     font-size: 36px;
     top: 50%;
     left: 50%;

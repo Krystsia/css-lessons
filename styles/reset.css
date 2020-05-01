@@ -113,7 +113,7 @@ audio:not([controls]) {
 }
 
 /**
- * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ * 1. Correct text resizing oddly in IE 6/7 when body `fonts-size` is set using
  *    `em` units.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
@@ -192,7 +192,7 @@ legend {
 }
 
 /**
- * 1. Correct font size not being inherited in all browsers.
+ * 1. Correct fonts size not being inherited in all browsers.
  * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
