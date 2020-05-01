@@ -1,0 +1,110 @@
+.main-header {
+    height: 100vh;
+    position: relative;
+    background-image: url(../../../image/чб.jpg);
+}
+
+
+/**============ main menu =================**/
+
+nav {
+    background: none;
+}
+
+.nav-wrapper .right {
+    height: 100%;
+    display: flex;
+}
+
+.menu-list__item a {
+    font-size: 26px;
+    line-height: 64px;
+}
+
+
+/** ======================== main header title ============================== **/
+
+.main-title {
+    font-family:"café & brewery";
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    animation: title-animation  4s forwards ;
+}
+
+.main-title:nth-child(1) {
+    font-size: 79px;
+    top: 10%;
+    color: rgb(44, 156, 132);
+    animation: title-animation-final-1 8s forwards ;
+}
+
+.main-title:nth-child(2) {
+    font-size: 69px;
+    top: 70%;
+    color: rgb(205, 65, 40);
+    animation: title-animation-final-2 4s forwards;
+}
+
+.main-title:nth-child(3) {
+    color: #e2c327;
+    animation: title-animation-final 32s forwards ;
+}
+
+@keyframes title-animation-final-1 {
+    0% {
+        transform: translateX(-450%);
+    }
+
+    60% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+
+@keyframes title-animation-final-2 {
+    0% {
+        transform: translateX(450%);
+    }
+
+    80% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+
+@keyframes title-animation-final {
+    0% {
+        transform: translate(-50%, -70%) scale(.1);
+        opacity: 0;}
+    100% {
+        transform: translate(-50%, -70%) scale(6);
+        opacity: 1;
+    }
+}
+
+@keyframes title-animation {
+    0% {
+        transform: translate(-50%, -70%) scale(.1);
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -70%) scale(3.5);
+        opacity: 0;
+    }
+}
+
+

@@ -5,84 +5,168 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified CSS for materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
+    <!-- Compiled and minified JavaScript for materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="https://unpkg.com/wired-elements@latest/dist/wired-elements.bundled.js"></script>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="./styles/fontello-65bef979/css/fontello.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/blocks/block.css">
+    <link rel="stylesheet" href="styles/blocks/components/block-info.css">
+    <link rel="stylesheet" href="styles/blocks/components/header.css">
     <script src="js/main.js"></script>
     <title>Консультатнт по ГВ</title>
 </head>
 <body>
-<!--<div class="menu-header">
-    <div class="menu-header__item left-part">
-        <div class="logo"><img src=></div>
-    </div>
-    <div class="menu-header__item menu">
-        <icon class="icon-menu menu-icon"></icon>
-        <ul class="menu-header__item menu-list">
-            <li class="menu-list__item">О нас</li>
-            <li class="menu-list__item">Услуги</li>
-            <li class="menu-list__item">Отзывы</li>
-            <li class="menu-list__item">Блог</li>
-            <li class="menu-list__item">Контакты</li>
-        </ul>
-    </div>
-</div>-->
-<nav>
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo right">Logo</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
-    </div>
-</nav>
 
-<div class="main-header">
+<section>
+
+</section>
+
+<section class="main-header block">
+    <div class="main-menu">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="menu-list__item"><a href="sass.html">O нас</a></li>
+                    <li class="menu-list__item"><a href="badges.html">Услуги</a></li>
+                    <li class="menu-list__item"><a href="collapsible.html">Отзывы</a></li>
+                    <li class="menu-list__item"><a href="mobile.html">Блог</a></li>
+                    <li class="menu-list__item"><a href="mobile.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">O нас</a></li>
+            <li><a href="badges.html">Услуги</a></li>
+            <li><a href="collapsible.html">Отзывы</a></li>
+            <li><a href="mobile.html">Блог</a></li>
+            <li><a href="mobile.html">Контакты</a></li>
+        </ul>
+    </div>
+
+
     <p class="main-header__item main-title">Он растёт</p>
     <p class="main-header__item main-title">Вы растёте</p>
     <p class="main-header__item main-title">МЫ РАСТЁМ</p>
-
-    <div class="main-header__item contacts">
-
-        <a class="waves-effect waves-light btn">button</a>
-        <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
-        <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-
-        <wired-input placeholder="Enter name"></wired-input>
-        <wired-button>Click Me</wired-button>
-        <!-- Tap Target Structure -->
+    <!--<button class="btn">Контакты</button>-->
 
 
-        <p class="contacts__item"><span>A1</span> +375 29 676 25 57</p>
-        <p class="contacts__item"><span>MTC</span> +375 29 577 35 57</p>
-        <p class="contacts__item"><span>Viber</span> +375 29 676 25 57</p>
-        <p class="contacts__item"><span>Telegram</span> +375 29 567 25 45</p>
-        <p class="contacts__item"><span>Scype</span> +375 29 567 25 45</p>
-    </div>
-</div>
+    <!--<div class="main-header__item contacts">
+        <p class="contacts__item"><span class="ellow">A1</span> +375 29 676 25 57</p>
+        <p class="contacts__item"><span class="red">MTC</span> +375 29 279 69 90</p>
+        <p class="contacts__item"><span class="purple">Viber</span> +375 29 676 25 57</p>
+        <p class="contacts__item"><span class="azur">Telegram</span> +375 29 676 25 57</p>
+        <p class="contacts__item"><span class="blue">Scype</span> +375 29 567 25 45</p>
+    </div>-->
+</section>
 
-<div class="tap-target" data-target="menu">
-    <div class="tap-target-content">
-        <h5>Title</h5>
-        <p>A bunch of text</p>
-    </div>
-</div>
 
 <section class="block">
+    <div class="row">
+        <div class="col s12 m12">
+            <h2 class="header">Horizontal Card</h2>
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="image/new.jpg">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fuga fugit harum iure laborum
+                            minima natus perspiciatis, voluptatibus. At dolores earum enim est illo ipsa magni nostrum
+                            quibusdam rem  orem ipsum dolor sit amet, consectetur adipisicing elit. Esse fuga fugit harum iure laborum
+                            minima natus perspiciatis, voluptatibus. At dolores earum enim est illo ipsa magni nostrum
+                            quibusdam reorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fuga fugit harum iure laborum
+                            minima natus perspiciatis, voluptatibus. At dolores earum enim est illo ipsa magni nostrum
+                            quibusdam retenetur.lorem</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block block-info">
+    <div class="row">
+
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="image/menu2.PNG">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="image/menu.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <div class="row">
         <div class="col s12 m6">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Card Title</span>
                     <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        I am convenient because I require little markup to use effectively.
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am convenient because I require little markup to use effectively.
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am convenient because I require little markup to use effectively.
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                        I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectivel
+                    </p>
                 </div>
                 <div class="card-action">
                     <a href="#">This is a link</a>
@@ -104,51 +188,63 @@
             </div>
         </div>
     </div>
+
 </section>
 
-<div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-</div>
-
-<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-<!-- Modal Structure -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-</div>
-
-
-<section class="block">
+<section class="block ">
     <div class="block_about-us">
-
         <div class="block_about-us__item block-text-container">
-            <p class="block-text">Конечно, мы растем всю свою жизнь – прибавляя в возрасте и росте, добиваясь определенных успехов, накапливая опыт и знания.
-                Но в какой-то момент это «мы растем» вдруг приобретает совершенно новое звучание. Сначала мы вырастаем до любви и обретения близкого человека,
-                затем растем, потому что скоро нас будет трое, четверо или даже больше…  С появлением ребенка наша жизнь меняется навсегда, и в этих изменениях
-                многие новоиспеченные родители открывают такие просторы для роста, что дух захватывает! Мы хотим разделить с вами все радости и волнения ожидания,
-                рождения и воспитания ребенка, потому и создали наш сайт – специально для тех будущих и настоящих родителей, которые мечтают заново открывать
-                мир и самих себя со своим малышом. Шаг за шагом мы готовы помочь вам постигать родительские навыки и умения, по-настоящему узнавать своего ребенка
-                и его потребности, открывать в себе все грани таланта, который, мы уверены, живет в каждой семейной паре – таланта быть родителями.
-
-                Подготовка к зачатию, беременность, искусство материнства и отцовства, психологические консультации для детей и взрослых, все
-                о развитии вашего ребенка от рождения до 8 лет, он-лайн ответы на ваши вопросы – на сайте «Мы растем» пытливые родители найдут
-                все для того, чтобы действительно почувствовать: «Мы растем!». Растем как мужчина и женщина, как пара, как семья, как родители…
-                Растем вместе со своим ребенком.
+            <p class="block-text">Конечно, мы растем всю свою жизнь – прибавляя в возрасте и росте, добиваясь
+                определенных успехов, накапливая опыт и знания.
+                Но в какой-то момент это «мы растем» вдруг приобретает совершенно новое звучание. Сначала мы вырастаем
+                до любви и обретения близкого человека,
+                затем растем, потому что скоро нас будет трое, четверо или даже больше… С появлением ребенка наша жизнь
+                меняется навсегда, и в этих изменениях
+                многие новоиспеченные родители открывают такие просторы для роста, что дух захватывает! Мы хотим
+                разделить с вами все радости и волнения ожидания,
+                рождения и воспитания ребенка, потому и создали наш сайт – специально для тех будущих и настоящих
+                родителей, которые...
             </p>
         </div>
+        <button class="btn">Читать дальше</button>
     </div>
 </section>
+
 <section class="block">
+    <div class="block_services">
+
+        <div class="block_services">
+
+            <div class="block_services__item preparation">
+                <div class="block_services__item preparation block-text">
+                    <p class="blok_servis__item preparation block-text-container">Подготовка к зачатию
+                    </p>
+                </div>
+                <div class="block_services__item preparation block-text">
+                    <p class="blok_servis__item preparation block-text-container">Искусство материнства и отцовства
+                    </p>
+                </div>
+
+                <div class="block_services__item preparation block-text">
+
+                    <p class="blok_servis__item preparation block-text-container">Психологические консультации для детей
+                        и взрослых
+                    </p>
+                </div>
+
+                <div class="block_services__item preparation block-text">
+
+                    <p class="blok_servis__item preparation block-text-container">Все о развитии вашего ребенка от
+                        рождения до 8 лет
+                    </p>
+                </div>
+                <div class="block_services__item preparation block-text">
+
+                    <p class="blok_servis__item preparation block-text-container">Он-лайн ответы на ваши вопросы
+                    </p>
+                </div>
+
+            </div>
 
 </section>
 <section class="block">
@@ -183,7 +279,8 @@
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                    content.</p>
             </div>
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>

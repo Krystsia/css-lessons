@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, {});
+ /* const carouselElement = document.querySelectorAll('.carousel');
+  const carousel = M.Carousel.init(carouselElement, {});*/
 
-  var elems = document.querySelectorAll('.scrollspy');
-  var instances = M.ScrollSpy.init(elems, {});
+/*  const elems = document.querySelectorAll('.scrollspy');
+  const instances = M.ScrollSpy.init(elems, {});
 
 
-  var elems = document.querySelectorAll('.tap-target');
-  var instances = M.TapTarget.init(elems, {});
+  const elems = document.querySelectorAll('.tap-target');
+  const instances = M.TapTarget.init(elems, {});*/
+
+  const navElement = document.querySelectorAll('.sidenav');
+  const nav = M.Sidenav.init(navElement, {});
 });
