@@ -1,0 +1,228 @@
+body {
+    font-family: Helvetica;
+}
+
+
+/** -------------здесь хедерная часть-----------**/
+
+
+.main-header .btn {
+
+}
+
+.main-header:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0.8;
+}
+
+.main-header__item {
+    position: absolute;
+    color: #FFAB91;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 50%;
+}
+
+.main-header__item p {
+    text-align: center;
+}
+
+/* -------------тут начинаются стили для заголовка ----------*/
+
+
+/** -------------кнопака хедера контакты----------------**/
+
+
+
+.gradient-box {
+    display: flex;
+    align-items: center;
+//width: 50vw;
+    width: 90%;
+    margin: auto;
+    max-width: 22em;
+
+    position: relative;
+    padding: 30% 2em;
+    box-sizing: border-box;
+
+    $border: 5px;
+    color: #FFF;
+    background: #000;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 1em;
+
+&:before {
+     content: '';
+     position: absolute;
+     top: 0; right: 0; bottom: 0; left: 0;
+     z-index: -1;
+     margin: -$border; /* !importanté */
+     border-radius: inherit; /* !importanté */
+     background: linear-gradient(to right, red, orange);
+ }
+}
+
+
+
+
+.main-header .btn {
+    margin-top: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    padding: 10px 30px;
+    border: 2px solid #f1443f;
+    border-radius: 10px/30px 40px/20px 20px/40px 10px/20px;
+    color: #f14642;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+}
+
+
+btn:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0,0,0,0);
+    transition: .4s;
+}
+/**---------------------контактные телефоны----------------**/
+.contacts {
+    font-family: Helvetica;
+    color: wheat;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ellow {
+    color: #d2481d;
+}
+
+.red {
+    color: rgba(213, 0, 0, 0.73);
+}
+
+.purple {
+    color: rgba(209, 0, 208, 0.6);
+}
+
+.azur {
+    color: #568e99;
+}
+
+.blue {
+    color: #1c2ba5;
+}
+
+.logo img {
+    weight: 100px;
+    height: 100px;
+}
+
+.menu img {
+    weight: 100px;
+    height: 100px;
+}
+
+
+
+/** --------------------------о нас ---------------------**/
+.about-as {
+    margin-top: 0;
+    background-color: #fbffce;
+}
+
+
+.about-as__text {
+    top: 0;
+    font-family: Helvetica;
+    letter-spacing: 5px;
+    margin-left: 50%;
+    color: #214746;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 150%;
+
+}
+
+/** -------------------blocks--------------------- **/
+
+.block_about-us {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-image: url("../image/family.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.block_about-us__item img {
+    width: 100%;
+
+}
+
+
+.block-text {
+    color: white;
+    font-family: Helvetica;
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding: 24px;
+}
+
+.block-text-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgba(75, 77, 61, 0.34)
+;
+}
+.block-text-container p {
+    width: 50%;
+}
+/** ----------------- блок услуги ----------------**/
+
+.block_services {
+    background: #ff8a65;
+    display: flex;
+}
+
+.blok_servis__item preparation {
+    background-color: white;
+    box-sizing:  border-box;
+    width: 30%;
+    border: 2px solid #f1c40f;
+    border-radius: 10px/30px 40px/20px 20px/40px 10px/20px;
+}
+
+.blok_servis__item preparation block-text-container {
+    color: white;
+    font-family: Helvetica;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+
+}
