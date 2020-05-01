@@ -1,3 +1,5 @@
+
+
 .main-header {
     height: 100vh;
     position: relative;
@@ -7,9 +9,16 @@
 
 /**============ main menu =================**/
 
+
 .main-menu {
     display: flex;
     justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid white;
+
 }
 
 .main-menu__item  {
@@ -71,7 +80,6 @@
 /** ======================== main header title ============================== **/
 
 .main-title {
-    font-family: MyFont;
     font-size: 36px;
     top: 50%;
     left: 50%;

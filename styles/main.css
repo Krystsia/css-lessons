@@ -1,5 +1,6 @@
 body {
-    font-family: Helvetica;
+    font-family: MyFont;
+    box-sizing: border-box;
 }
 
 
@@ -59,7 +60,6 @@ s
     border: 2px solid #f1443f;
     /*border-radius: 10px/30px 40px/20px 20px/40px 10px/20px;*/
     color: #f14642;
-    font-family: 'Montserrat', sans-serif;
     transition: .4s;
 }
 
@@ -78,7 +78,6 @@ btn:after {
 }
 /**---------------------контактные телефоны----------------**/
 .contacts {
-    font-family: Helvetica;
     color: wheat;
     bottom: 50px;
     left: 50%;
@@ -163,11 +162,7 @@ btn:after {
 }
 
 .block-text-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: rgba(75, 77, 61, 0.34)
-;
+
 }
 .block-text-container p {
     width: 50%;
@@ -177,21 +172,18 @@ btn:after {
 .block_services {
     background: #ff8a65;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.blok_servis__item preparation {
-    background-color: white;
-    box-sizing:  border-box;
-    width: 30%;
-    border: 2px solid #f1c40f;
- /*   border-radius: 10px/30px 40px/20px 20px/40px 10px/20px;*/
-}
-
-.blok_servis__item preparation block-text-container {
-    color: white;
+.block_services__item {
+    width: 33.3%;
+    padding: 150px 20px 100px;
+    box-sizing: border-box;
+    color: #6e1e1c;
+    font-size: 20px;
     font-family: Helvetica;
-    letter-spacing: 2px;
-    font-size: 24px;
     text-align: center;
 
 }
+
