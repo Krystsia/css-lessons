@@ -1,21 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, {});
+
+  var elems = document.querySelectorAll('.scrollspy');
+  var instances = M.ScrollSpy.init(elems, {});
 
 
-    let isOpen;
-    const menu = document.querySelector('.menu-list');
-    const trigger = document.querySelector('.menu-icon');
-
-    console.log(trigger)
-
-    trigger.addEventListener('click', (e) => {
-        console.log('helo')
-        if (!isOpen) {
-            menu.classList.add('menu-list_open');
-            isOpen = true;
-        } else {
-            menu.classList.remove('menu-list_open');
-            isOpen = false;
-        }
-    });
-
-})
+  var elems = document.querySelectorAll('.tap-target');
+  var instances = M.TapTarget.init(elems, {});
+});
