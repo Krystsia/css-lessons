@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         Array.prototype.forEach.call(timeline_events, item => {
 
             console.log(window.scrollY, item.offsetTop)
-            if(item.offsetTop < threshold_position){
+            if(item.offsetTop < threshold_position){k
                 item.classList.add('visible');
             } else {
                 item.classList.remove('visible');
