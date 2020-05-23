@@ -1,0 +1,21 @@
+/** ----------------- блок услуги ----------------**/
+
+.block_services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block_services__item {
+    width: 33.3%;
+    padding: 150px 20px 100px;
+    box-sizing: border-box;
+    color: #455a64;
+    font-size: 16px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.block-text-container {
+    padding: 30px;
+}

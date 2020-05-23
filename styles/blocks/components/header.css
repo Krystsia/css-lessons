@@ -1,9 +1,7 @@
-
-
 .main-header {
     height: 100vh;
     position: relative;
-    background-image: url(../../../image/чб.jpg);
+    background-image: url(../../../dist/image/чб.jpg);
 }
 
 
@@ -15,22 +13,14 @@
     justify-content: space-between;
 }
 
-.line {
-    width: 100%;
-    border-bottom: 1px solid white;
-
-}
-
 .main-menu__item  {
     color: black;
 }
 
 .menu-list__item {
     display: inline-block;
-    padding: 20px 30px;
-    margin: 10px 20px;
     position: relative;
-    color: white;
+    color: #eceff1;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -46,40 +36,26 @@
     box-sizing: border-box;
 }
 
-.menu-list__item:before {
-    bottom: 0;
-    left: 0;
-    border-left: 1px solid #e2c327;
-    border-top: 1px solid #e2c327;
-    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
-}
-.menu-list__item:after {
-    top: 0;
-    right: 0;
-    border-right: 1px solid #e2c327;
-    border-bottom: 1px solid #e2c327;
-    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+nav {
+    background: none;
 }
 
-.menu-list__item:hover {
-    cursor: pointer;
-}
-
-
-.menu-list__item:hover:before,
-.menu-list__item:hover:after{
+.nav-wrapper .right {
     height: 100%;
-    width: 100%;
-    opacity: 1;
+    display: flex;
 }
-.menu-list__item:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
-.menu-list__item:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
 
+.menu-list__item a {
+    font-size: 16px;
+    line-height: 64px;
+    color: #607d8b;
+}
 
 
 /** ======================== main header title ============================== **/
 
 .main-title {
+    font-family: "café & brewery";
     font-size: 36px;
     top: 50%;
     left: 50%;
@@ -89,19 +65,19 @@
 .main-title:nth-child(1) {
     font-size: 79px;
     top: 10%;
-    color: rgb(44, 156, 132);
+    color: #b9f6ca;
     animation: title-animation-final-1 8s forwards ;
 }
 
 .main-title:nth-child(2) {
     font-size: 69px;
     top: 70%;
-    color: rgb(205, 65, 40);
+    color: #f4ff81;
     animation: title-animation-final-2 4s forwards;
 }
 
 .main-title:nth-child(3) {
-    color: #e2c327;
+    color: #ccff90;
     animation: title-animation-final 32s forwards ;
 }
 
@@ -162,3 +138,7 @@
 }
 
 
+.brand-logo {
+    font-size: 24px;
+    padding: 0 10px;
+}
