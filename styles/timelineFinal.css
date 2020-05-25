@@ -24,7 +24,7 @@ h3{
 }
 /* the timeline's center vertical line */
 .timeline:before{
-    content:"";
+
     position:absolute;
     top:0;
     bottom:0;

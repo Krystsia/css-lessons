@@ -147,6 +147,20 @@ body {
 
 /** -------------кнопака хедера контакты----------------**/
 
+.glide__slides .card-content {
+    min-height: 400px;
+}
+
+.parallax-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(22, 53, 67, 0.79);
+    color: white;
+    font-size: 22px;
+    line-height: 52px;
+}
 
 .main-header .btn {
     margin-top: 200px;

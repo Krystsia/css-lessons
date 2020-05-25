@@ -18,13 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function timeline(){
         const threshold_position = window.scrollY + window.innerHeight * 2/3;
-
-
         const timeline_events = document.querySelectorAll('.timeline li');
-        Array.prototype.forEach.call(timeline_events, item => {
 
-            console.log(window.scrollY, item.offsetTop)
-            if(item.offsetTop < threshold_position){k
+        Array.prototype.forEach.call(timeline_events, item => {
+            if(item.offsetTop < threshold_position){
                 item.classList.add('visible');
             } else {
                 item.classList.remove('visible');
@@ -32,8 +29,29 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     timeline();
-    const glide = new Glide('.glide').mount();
-    // glide.settings.autoplay = true;
+
+
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {});
+
+
+    const glide = new Glide('.glide', {
+        type: 'carousel',
+        perView: 4,
+        focusAt: 'center',
+        breakpoints: {
+            800: {
+                perView: 2
+            },
+            480: {
+                perView: 1
+            }
+        }
+    })
+
+    glide.mount()
+
+
     glide.settings.animationDuration = 2000;
     glide.settings.gap = 0;
     glide.settings.rewindDuration = 2000;

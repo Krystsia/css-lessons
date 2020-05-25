@@ -5,52 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<!--
-    <script
-            src="https://code.jquery.com/jquery-3.5.0.min.js"
-            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-            crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/path/to/noframework.waypoints.min.js"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script src="../js/timeline.js"></script>-->
     <script
             src="https://code.jquery.com/jquery-3.5.0.min.js"
             integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
             crossorigin="anonymous"></script>
 
-    <script src="./main.js"></script>
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-    <script>new Glide('.glide').mount()</script>
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-
-
-   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/carousel.css">
-    <link rel="stylesheet" href="../styles/card-info.css">-->
-
-    <!--<link rel="stylesheet" href="../site-font/fonts.css">
-    <link rel="stylesheet" href="../styles/fontello-65bef979/css/fontello.css">
-    <link rell="stylesheet" href="../styles/form.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/blocks/block.css">
-    <link rel="stylesheet" href="../styles/blocks/components/block-services.css">
-    <link rel="stylesheet" href="../styles/blocks/components/block-info.css">
-    <link rel="stylesheet" href="../styles/blocks/components/header.css">
-    <link rel="stylesheet" href="../styles/timeline.css">-->
-
-
     <title>Консультатнт по ГВ</title>
 </head>
 <body>
+
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+</div>
+
 
 <section>
 
@@ -139,7 +116,7 @@
 </section>
 
 <section class="parallax-container">
-    <div class="parallax"><img src="image/family.jpg"></div>
+    <div class="parallax"><img src="../image/family.jpg"></div>
     <div class="parallax-text">
         <div class="row">
             <p class="col s12 l6 offset-l3">Главная цель деятельности - здоровый и счастливый малыш у наслаждающейся материнством мамы. Культура
@@ -167,6 +144,11 @@
             <p>Высшее психологическое – Белорусский Государственный университет.</p>
         </li>
         <li>
+            <h3>2007,2008</h3>
+            <p>Высшее психологическое – Белорусский Государственный университет.</p>
+            <img src="../image/child-lego.jpg" alt="" style="max-width: 300px">
+        </li>
+        <li>
             <h3>1998-1999</h3>
             <p>Семинары по телесным и дыхательным практикам.</p>
         </li>
@@ -177,10 +159,11 @@
         <li>
             <h3>Дополнительное обучение</h3>
             <h3>1998-1999</h3>
+            <img src="../image/football-kids.jpg.jpg" alt="" style="max-width: 400px">
             <p>Семинары по телесным и дыхательным практикам (г.Минск),
                 другие тренинги для работы с психологическими проблемами детей, подростков, взрослых.</p>
         </li>
-        <li>
+        <li>parallax-text
             <h3>2003-2008</h3>
             <p>Обучение по программе «Консультирование по грудному вскармливанию».
                 Присвоена квалификация «Опытный консультант по грудному вскармливанию».</p>
@@ -251,19 +234,50 @@
 </div>
 
 
-
-<section class="parallax-container">
-    <div class="parallax"><img src="image/parents-and-children.jpg"></div>
-</section>
-
-
-
 <section class="glide">
     <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
-            <li class="glide__slide"><img src="image/parents-and-children.jpg" alt=""></li>
-            <li class="glide__slide"><img src="image/baby-girl.jpg" alt=""></li>
-            <li class="glide__slide"><img src="image/football-kids.jpg" alt=""></li>
+            <li class="glide__slide"> <div class="row">
+
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Ольга Криницына</span>
+                            <p>Это прекрасно Это Это прекрасноЭто прекрасноЭто прекрасноЭто прекрасноЭто прекрасноЭто прекрасноЭто прекрасно
+                                Это прекрасноЭто прекрасноЭто прекрасноЭто прекрасно.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Читать отзыв</a>
+                        </div>
+                    </div>
+
+            </div></li>
+            <li class="glide__slide"> <div class="row">
+
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Денис Владимиров</span>
+                            <p>то прекрасно Это Это прекрасноЭто прекрасноЭто прекрасноЭто прекрасноЭто прекрасноЭто прекрасноЭто прекрасно
+                                Это прекрасноЭто прекрасноЭто прекрасноЭто прекрасно..</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Читать отзыв</a>
+                        </div>
+                    </div>
+
+            </div></li>
+            <li class="glide__slide"> <div class="row">
+
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Вероника Вершинина</span>
+                            <p> прекрасно Это Это прекрасноЭто прекр</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Читать отзыв</a>
+                        </div>
+                    </div>
+
+            </div></li>
         </ul>
     </div>
 
@@ -282,7 +296,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/brothers-457237_1920.jpg">
+                    <img class="activator" src="../image/brothers-457237_1920.jpg">
                 </div>
                 <div class="card-content1">
                     <span class="card-title activator grey-text text-darken-4">А ваш ребенок плачет по ночам?
@@ -311,7 +325,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/baby1.jpg">
+                    <img class="activator" src="../image/baby1.jpg">
                 </div>
                 <div class="card-content2">
                     <span class="card-title activator grey-text text-darken-4">Счастливое материнство и отцовство<i
@@ -348,7 +362,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/kindergarten.jpg">
+                    <img class="activator" src="../image/kindergarten.jpg">
                 </div>
                 <div class="card-content1">
                     <span class="card-title activator grey-text text-darken-4">А ваш ребенок плачет по ночам?
@@ -377,7 +391,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/swing-kids.jpg">
+                    <img class="activator" src="../image/swing-kids.jpg">
                 </div>
                 <div class="card-content2">
                     <span class="card-title activator grey-text text-darken-4">Счастливое материнство и отцовство<i
@@ -414,7 +428,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/mama-baby.jpg">
+                    <img class="activator" src="../image/mama-baby.jpg">
                 </div>
                 <div class="card-content1">
                     <span class="card-title activator grey-text text-darken-4">А ваш ребенок плачет по ночам?
@@ -443,7 +457,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/kidsdesing.jpg">
+                    <img class="activator" src="../image/kidsdesing.jpg">
                 </div>
                 <div class="card-content2">
                     <span class="card-title activator grey-text text-darken-4">Счастливое материнство и отцовство<i
@@ -480,7 +494,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/bicicletta.jpg">
+                    <img class="activator" src="../image/bicicletta.jpg">
                 </div>
                 <div class="card-content1">
                     <span class="card-title activator grey-text text-darken-4">А ваш ребенок плачет по ночам?
@@ -509,7 +523,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/children-heppy.jpg">
+                    <img class="activator" src="../image/children-heppy.jpg">
                 </div>
                 <div class="card-content2">
                     <span class="card-title activator grey-text text-darken-4">Счастливое материнство и отцовство<i
@@ -548,7 +562,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/child-lego.jpg">
+                    <img class="activator" src="../image/child-lego.jpg">
                 </div>
                 <div class="card-content1">
                     <span class="card-title activator grey-text text-darken-4">А ваш ребенок плачет по ночам?
@@ -577,7 +591,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/baby3.jpg">
+                    <img class="activator" src="../image/baby3.jpg">
                 </div>
                 <div class="card-content2">
                     <span class="card-title activator grey-text text-darken-4">Счастливое материнство и отцовство<i
@@ -614,7 +628,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/mama-libro.jpg">
+                    <img class="activator" src="../image/mama-libro.jpg">
                 </div>
                 <div class="card-content1">
                     <span class="card-title activator grey-text text-darken-4">А ваш ребенок плачет по ночам?
@@ -643,7 +657,7 @@
         <div class="col s12 m6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="image/baby-girl.jpg">
+                    <img class="activator" src="../image/baby-girl.jpg">
                 </div>
                 <div class="card-content2">
                     <span class="card-title activator grey-text text-darken-4">Счастливое материнство и отцовство<i
